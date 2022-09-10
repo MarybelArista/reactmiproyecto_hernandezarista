@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppStarwars from './AppStarwars';
+import NavBar from './NavBar';
+import ItemDetailConteiner from './components/shop/ItemDetailConteiner';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-   <AppStarwars /> 
-  </React.StrictMode>
+  <BrowserRouter>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<App/>}/>
+      <Route path='/shop/detail' element={<ItemDetailConteiner/>}/>
+    </Routes>
+    <footer/>
+  </BrowserRouter>
 
 );
 

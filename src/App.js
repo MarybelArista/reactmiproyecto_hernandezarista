@@ -1,7 +1,7 @@
 /* import logo from './components/'; */
 import { useEffect, useState } from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './NavBar';
 import ConteinerStarWars from './components/STARWARS/ConteinerStarWars';
  
 function App() {
